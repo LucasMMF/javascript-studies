@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Exercício 1</title>
+    </head>
+    <body>
+        
+        <script>
+            // Crie uma função que dado o objeto a seguir:
+            // 
+            // var endereco = {
+            //      rua: "Rua dos Pinheiros",
+            //      numero: 1293,
+            //      bairro: "Centro",
+            //      cidade: "São Paulo",
+            //      uf: "SP"   
+            // };
+            // 
+            // retorne o seguinte conteúdo:
+            // 
+            // O usuário mora em São Paulo / SP, no bairro
+            // Centro, na rua "Rua dos Pinheiros" com nro 1293.
+
+            function retornaMensagem(end) {
+                return `O usuário mora em ${end.cidade} / ${end.uf}, no bairro ${end.bairro}, na rua "${end.rua}" com nro ${end.numero}`;
+            }
+
+            var endereco = {
+                rua: "Rua dos Pinheiros",
+                numero: 1293,
+                bairro: "Centro",
+                cidade: "São Paulo",
+                uf: "SP"
+            };
+
+            console.log(retornaMensagem(endereco));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Exercício 4</title>
+    </head>
+    
+    <body>
+
+        <div id="d-add">
+            <input type="text" name="nome"/>
+            <button onclick="adicionar()">Adicionar</button>
+        </div>
+
+        <ul id="nomes"></ul>
+
+        <script>
+            // A partir do vetor de nomes abaixo, preencha
+            // uma lista (<ul>) no HTML com os itens da seguinte
+            // forma:
+            // * Diego
+            // * Gabriel
+            // * Lucas
+
+            function adicionar() {
+                var novoNome = document.querySelector('input[name=nome]');
+
+                if (novoNome.value === "") {
+                    alert("Por favor, digite algo na caixa de texto antes de clicar em adicionar.");
+                } else {
+                    var liElement = document.createElement('li');
+                    var textNode = document.createTextNode(novoNome.value);
+                    nomes.push(novoNome.value);
+
+                    ulElement.appendChild(liElement);
+                    liElement.appendChild(textNode);
+                    novoNome.value = "";
+                }
+            }
+            
+            var nomes = ["Diego", "Gabriel", "Lucas"];
+            var ulElement = document.querySelector("ul#nomes");
+
+            for (nome of nomes) {
+                var liElement = document.createElement('li');
+                var textNode = document.createTextNode(nome);
+
+                ulElement.appendChild(liElement);
+                liElement.appendChild(textNode);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Exercício 1</title>
+    </head>
+    
+    <body>
+
+        <div id="d-btn">
+            <button id="btn-red">Clique aqui!</button>
+        </div>
+
+        <div id="d-square">
+
+        </div>
+        <script>
+            // Crie um botão que ao ser clicado cria um novo elemento
+            // em tela com a forma de um quadrado vermelho com
+            // 100px de altura e largura. Sempre que o botão for clicado
+            // um novo quadrado deve aparecer na tela.
+
+            function criaCaixaVermelha() {
+                var divDaCaixa = document.querySelector('#d-square');
+                var boxElement = document.createElement('div');
+                
+                boxElement.style.height = '100px';
+                boxElement.style.width = '100px';
+                boxElement.style.backgroundColor = '#f00';
+                boxElement.style.marginTop = '5px';
+
+                divDaCaixa.appendChild(boxElement);
+            }
+
+            var botaoParaVermelho = document.querySelector('#d-btn #btn-red');
+
+            botaoParaVermelho.onclick = criaCaixaVermelha;
+        </script>
+    </body>
+</html>

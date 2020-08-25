@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Exercício 2</title>
+    </head>
+    
+    <body>
+
+        <div id="d-btn">
+            <button id="btn-red">Clique aqui!</button>
+        </div>
+
+        <div id="d-square">
+
+        </div>
+        <script>
+            // Utilizando o resultado do primeiro desafio, toda vez
+            // que o usuário passar o mouse por cima de algum quadrado
+            // troque sua cor para uma cor aleatória gerada pela função
+            // abaixo:
+
+            function getRandomColor() {
+                var letters = "0123456789ABCDEF";
+                var color = "#";
+
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                // Obs.: em Math.random() * 16, o 16 é o número de
+                // possíveis resultados. Neste caso, resultados entre
+                // 0 e F.
+                // Fonte: https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript
+
+                return color;
+            }
+
+            function mudaCor() {
+                var newColor = getRandomColor(); // #E94F0
+            }
+
+            function criaCaixaVermelha() {
+                var divDaCaixa = document.querySelector('#d-square');
+                var boxElement = document.createElement('div');
+                
+                boxElement.style.height = '100px';
+                boxElement.style.width = '100px';
+                boxElement.style.backgroundColor = '#f00';
+                boxElement.style.marginTop = '5px';
+
+                boxElement.onmouseover = function () {
+                    boxElement.style.backgroundColor = getRandomColor();
+                }
+
+                divDaCaixa.appendChild(boxElement);
+            }
+
+            var botaoParaVermelho = document.querySelector('#d-btn #btn-red');
+
+            botaoParaVermelho.onclick = criaCaixaVermelha;
+        </script>
+    </body>
+</html>

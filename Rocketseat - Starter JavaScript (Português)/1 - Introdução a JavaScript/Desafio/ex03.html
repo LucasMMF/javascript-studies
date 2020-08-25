@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Exercício 3</title>
+    </head>
+    <body>
+        
+        <script>
+            // Escreva uma função que verifique se o vetor
+            // de habilidades passado possui a habilidade "JavaScript"
+            // e retorna um booleano true/false caso exista ou não.
+            
+            // Dica: para verificar se um vetor contém um valor,
+            // utilize o método indexOf.
+
+            function temHabilidade(skills, habilidade) {
+                var pos = skills.indexOf(habilidade);
+
+                return (pos >= 0) ? true : false;
+            }
+            
+            var skills = ["JavaScript", "ReactJS", "React Native"];
+            console.log(temHabilidade(skills, "JavaScript"));
+        </script>
+    </body>
+</html>
