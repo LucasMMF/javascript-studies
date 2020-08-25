@@ -4,3 +4,5 @@ ministrado pelo professor [Diego Fernandes](https://github.com/diego3g) da Rocke
 Este curso contém conceitos básicos do JavaScript, manipulação da DOM,
 a construção de um app de uma lista de to-dos e uma introdução a JavaScript
 assíncrono, utilizando Ajax, promises e Axios.
+
+O curso pode ser encontrado [aqui](https://rocketseat.com.br/), é necessário realizar um cadastro, porém o curso e o cadastro são de graça.
