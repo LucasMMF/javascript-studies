@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Passaporte</title>
+    <style>
+        input#btne{margin-left: 10px;}
+    </style>
+</head>
+<body>
+    <h1>Emissão de passaportes</h1>
+    Informe o país aonde você nasceu: 
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Emitir" id="btne">
+    <div id="msg"></div>
+
+    <script>
+        var btn = document.querySelector('input#btne')
+        btn.addEventListener('click', emitir)
+
+        function emitir() {
+            var pais = document.querySelector('input#txtpais').value
+            var msg = document.querySelector('div#msg')
+
+            msg.innerHTML = `<p>Você informou que nasceu no ${pais}.</p>` 
+
+            if (pais == 'Brasil') {
+                msg.innerHTML += '<p>Portanto, você é brasileiro!</p>'
+            } else {
+                msg.innerHTML += '<p>Portanto, você é estrangeiro!</p>'
+            }
+        }
+    </script>
+</body>
+</html>

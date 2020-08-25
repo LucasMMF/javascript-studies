@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Meu primeiro programa...</title>
+    <!--style é código css-->
+    <style>
+        body{
+            background-color: rgb(105, 105, 173);
+            color: white; /*Comentário em CSS*/
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgba(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1> <!-- Isso é um comentário. -->
+    <p>Já me livrei da maldição!</p>
+    <!--script é o código JS, no geral, o Script do JS vem no final do body
+    mais informações: https://bit.ly/3dY76Q9-->
+    <script>
+        var nome = window.prompt('Qual é o seu nome?') // Vai perguntar o nome...
+        // A variável nome recebe o resultado da prompt.
+        window.alert('É um grande prazer em te conhecer, ' + nome + '!') // Concatenação!
+        
+        // Também pode utilizar template strings para obter o mesmo resultado do alert acima.
+        // window.alert(`É um grande prazer em te conhecer, ${nome}!`)
+
+        /*
+        Isso é um comentário de linhas multiplas em JavaScript,
+        posso escrever comentários em multiplas linhas sem nunca
+        me preocupar que o compilador tente executar essas linhas.
+
+        Comentários são bons para depuração de códigos com erros
+        e para explicar certas partes do seu código.
+        */
+    </script>
+</body>
+</html>

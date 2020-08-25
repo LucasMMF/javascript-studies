@@ -1,0 +1,121 @@
+<!--
+    O código a seguir foi escrito em um comentário no 
+    youtube do vídeo da aula 05 pelo usuário Rafael Aires.
+    Este código utiliza o ex001 escrito na aula 04,
+    mas contém anotações tanto da aula 04 quanto da aula 05.
+    Mais alguns extras (como a palavra reservada const).
+-->
+
+<!-- Doctype é uma maneira de definir que estou ulizando html5-->
+<!DOCTYPE html> 
+
+ <!--Nessa linha eu defino a linguagem utilizada em meu site-->
+<html lang="pt-br">
+
+<!--
+    <Para criar uma variavel, é necessario usar o var, let ou const antes>
+    <Var é uma variavel comum>
+    <Let é uma variavel utilizada dentro de um funçao>
+    <Const é uma variavel constante, onde o conteudo nao pode ser editado>
+    <Indentificador de variavel é o termo para o nome de uma variável>
+    <Os indentificadores podem começar com letras, $ ou _ >
+    <Não podem começar com números>
+    <É possivel usar acentos e simbolos> 
+    <Não pode conter espaços>
+    <Não podem conter palavras reservadas como (var var)> 
+    <Uma variável é um espaço na memória que salva um dado usando um indentificador>
+    <Maiúsculas e minúsculas fazem diferença na variável>
+    <Números inteiros ou quebrados, são tratados como NUMBER no JS>
+    <Quando você quiser definir se algo é verdadeiro ou falso (True ou False)
+    voce utiliza booleans>
+    <Quando voce quer se referir a um conjunto de caracteres ou uma palavra
+    voce utiliza string>
+    <Para descobrir os tipos primitivos voce utiliza typeof>
+    <Para saber quantas letras tem na string utilizar nome variavel.length>
+    <Para deixar tudo maiusculo utilizar nome variavel.toUpperCase()
+    e para minusculas utilizar .toLowerCase()>
+-->
+
+<!-- 
+            TIPOS PRIMITIVOS
+    number
+        infinity
+        NaN
+    string
+    boolean
+    null
+    undefined
+    object
+        Array
+    function
+-->
+
+   
+<!--No head, fica a cabeça do meu site, toda a config dele-->
+ <head>
+    <meta charset="UTF-8">
+    <meta name="Aula dois" content="itens da minha segunda aula de js">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Segunda aula de JS </title>
+
+<!--No style, eu chamo o CSS e mudo o estilo do meu site-->
+<style>
+/* Esta é uma maneira de comentar dentro do CSS */
+        body{
+            font-family: sans-serif;
+            font: normal ;
+            background-color: rgb(170, 169, 170);
+        }
+
+        h1 {
+            color: rgb(255, 255, 20);
+        }
+</style>
+
+</head>
+
+
+<body>
+<!--Dentro do body, é onde fica o conteudo do meu site, inclusive os scripts-->    
+ 
+        <h1>Ola Mundo</h1>
+        <p> Ja me livrei da maldiçao</p>
+
+<script>
+    /*Todo script tem que estar dentro da chave de script*/
+
+            // Esse comentario só funciona dentro da chave de script
+
+            // O alert, serve para criar um alerta na pagina
+            // alert('Olá Mundo!')
+
+            // O confirm, cria um alerta com a opçao de ok ou cancelar
+            // confirm('Esta gostando do Curso?')
+            
+            // O prompt cria um alerta com input para o usuário
+           
+        var n1 = Number (prompt('Digite um numero: '))
+        var n2 = Number (prompt('Digite outro numero: '))
+        var s  = n1 + n2
+        alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+
+            /* Para chamar uma variavel ou utilizar algum sinal apos o texto
+               dentro de uma frase, eu tenho que utilizar o sinal de + 
+               que no JS significa CONCATENAÇÃO ou ADIÇAO
+            */
+
+            /* Pra converter uma string para number posso utilizar o Number apos o =
+            ou o contrario ou n.toString() para fazer o numero ser string */
+            
+
+            /* Utilizar o metodo abaixo para nao precisar concatenar
+            `O aluno ${nome da variavel} com ${nome da variavel} anos,
+            tirou a nota ${nome da variavel} no curso de JS` (utilizar crase)
+            */
+             
+
+</script>
+
+
+</body>
+</html>
